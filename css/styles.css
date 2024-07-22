@@ -11,21 +11,27 @@ header {
     color: white;
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 80px; /* Aumentando a altura do header */
+    height: 100px; /* Aumentando a altura do header */
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 0;
     height: 100%; /* Para garantir que o conteúdo preencha a altura do header */
 }
 
+.logo {
+    flex: 1;
+}
+
 .logo img {
-    height: 50px;
+    height: 80px; /* Ajustando a altura da logo para ocupar mais espaço */
+}
+
+header nav {
+    flex: 2;
 }
 
 header nav ul {
@@ -33,6 +39,8 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 header nav ul li {
@@ -42,7 +50,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.3s ease;
 }
 
@@ -50,8 +58,13 @@ header nav ul li a:hover {
     color: #ffcc00;
 }
 
-.search-icon img {
-    height: 30px; /* Ajuste conforme necessário */
+.search-icon {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    color: white;
     cursor: pointer;
 }
 
