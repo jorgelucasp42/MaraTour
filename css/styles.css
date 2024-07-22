@@ -32,6 +32,7 @@ header {
 
 header nav {
     flex: 2;
+    text-align: right; /* Alinha o texto à direita */
 }
 
 header nav ul {
@@ -39,7 +40,7 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
 
