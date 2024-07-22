@@ -11,7 +11,7 @@ header {
     color: white;
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 80px; /* Altura do header */
+    height: 90px; /* Altura do header */
 }
 
 .header-container {
@@ -45,14 +45,14 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 20px; /* Ajustando o espaçamento entre os itens da lista */
+    margin: 0 15px; /* Ajustando o espaçamento entre os itens da lista */
     height: 100%; /* Garantir que o li ocupe toda a altura do header */
     display: flex;
     align-items: center;
 }
 
 header nav ul li:hover {
-    background-color: #ffcc00; /* Alteração de cor ao passar o cursor */
+    background-color: #f1eaeae3; /* Alteração de cor ao passar o cursor */
 }
 
 header nav ul li a {
@@ -61,6 +61,7 @@ header nav ul li a {
     font-size: 18px;
     transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
     padding: 10px 15px;
+    height: 100%;
 }
 
 header nav ul li a:hover {
