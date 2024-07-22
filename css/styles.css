@@ -9,14 +9,23 @@ body {
 header {
     background-color: #003366;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 80px; /* Aumentando a altura do header */
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 100%; /* Para garantir que o conteúdo preencha a altura do header */
+}
+
+.logo img {
+    height: 50px;
 }
 
 header nav ul {
@@ -24,7 +33,6 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 header nav ul li {
@@ -42,6 +50,12 @@ header nav ul li a:hover {
     color: #ffcc00;
 }
 
+.search-icon img {
+    height: 30px; /* Ajuste conforme necessário */
+    cursor: pointer;
+}
+
+/* Carousel */
 .carousel {
     position: relative;
     width: 100%;
@@ -83,45 +97,39 @@ header nav ul li a:hover {
     }
 }
 
+/* Grid Layout */
 #attractions {
     background-color: white;
     padding: 40px 0;
 }
 
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0; /* Remove o espaçamento entre os itens */
     max-width: 1200px;
     margin: 0 auto;
-    gap: 20px;
 }
 
 .grid-item {
-    flex: 1 1 calc(33.333% - 20px);
-    margin: 10px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.grid-item:hover {
-    transform: translateY(-5px);
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 3px solid #003366;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .grid-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #003366;
+    margin: 0;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 3px;
 }
 
 footer {
