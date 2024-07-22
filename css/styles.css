@@ -11,7 +11,7 @@ header {
     color: white;
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100px; /* Aumentando a altura do header */
+    height: 80px; /* Altura do header */
 }
 
 .header-container {
@@ -27,12 +27,11 @@ header {
 }
 
 .logo img {
-    height: 80px; /* Ajustando a altura da logo para ocupar mais espaço */
+    height: 70px; /* Ajustando a altura da logo */
 }
 
 header nav {
     flex: 2;
-    text-align: right; /* Alinha o texto à direita */
 }
 
 header nav ul {
@@ -40,23 +39,32 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    height: 100%; /* Garantir que o ul ocupe toda a altura do header */
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 20px; /* Ajustando o espaçamento entre os itens da lista */
+    height: 100%; /* Garantir que o li ocupe toda a altura do header */
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:hover {
+    background-color: #ffcc00; /* Alteração de cor ao passar o cursor */
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
+    padding: 10px 15px;
 }
 
 header nav ul li a:hover {
-    color: #ffcc00;
+    color: #003366;
 }
 
 .search-icon {
