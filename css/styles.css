@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: #003366;
-    color: white;
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #4d4d4d; /* Tom forte de cinza para o texto */
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     height: 90px; /* Altura do header */
@@ -56,7 +56,7 @@ header nav ul li:hover {
 }
 
 header nav ul li a {
-    color: white;
+    color: #4d4d4d; /* Tom forte de cinza */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
@@ -74,8 +74,12 @@ header nav ul li a:hover {
     justify-content: flex-end;
     align-items: center;
     font-size: 24px;
-    color: white;
+    color: #4d4d4d; /* Tom forte de cinza */
     cursor: pointer;
+}
+
+.search-icon:hover {
+    color: #003366; /* Cor ao passar o cursor sobre a lupa */
 }
 
 /* Carousel */
@@ -156,8 +160,8 @@ header nav ul li a:hover {
 }
 
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #4d4d4d; /* Tom forte de cinza */
     text-align: center;
     padding: 20px 0;
     position: relative;
