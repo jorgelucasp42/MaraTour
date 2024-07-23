@@ -3,15 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #c59974; /* Fundo creme suave */
 }
 
 header {
-    background-color: #ffffff; /* Cor de fundo branca */
+    background-color: white; /* Fundo branco para o header */
     color: #4d4d4d; /* Tom forte de cinza para o texto */
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 90px; /* Altura do header */
+    height: 100px; /* Altura do header */
 }
 
 .header-container {
@@ -79,7 +79,13 @@ header nav ul li a:hover {
 }
 
 .search-icon:hover {
-    color: #003366; /* Cor ao passar o cursor sobre a lupa */
+    color: #eca366; /* Cor ao passar o cursor sobre a lupa */
+}
+
+/* Main content */
+main {
+    background-color: #fff4d0; /* Fundo creme suave para o conteúdo principal */
+    padding: 20px 0;
 }
 
 /* Carousel */
@@ -126,7 +132,7 @@ header nav ul li a:hover {
 
 /* Grid Layout */
 #attractions {
-    background-color: white;
+    background-color: #FFFDD0; /* Fundo creme suave para as atrações */
     padding: 40px 0;
 }
 
@@ -160,7 +166,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background-color: #ffffff; /* Cor de fundo branca */
+    background-color: white; /* Fundo branco para o footer */
     color: #4d4d4d; /* Tom forte de cinza */
     text-align: center;
     padding: 20px 0;
