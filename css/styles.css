@@ -3,11 +3,11 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c59974; /* Fundo creme suave */
+    background-color: #f0ebe6;
 }
 
 header {
-    background-color: white; /* Fundo branco para o header */
+    background-color: #050a30; /* Cor da logo */
     color: #4d4d4d; /* Tom forte de cinza para o texto */
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -56,7 +56,7 @@ header nav ul li:hover {
 }
 
 header nav ul li a {
-    color: #4d4d4d; /* Tom forte de cinza */
+    color: white; /* Cor branca para o texto */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
@@ -65,7 +65,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #003366;
+    color: #eca366;
 }
 
 .search-icon {
@@ -74,17 +74,17 @@ header nav ul li a:hover {
     justify-content: flex-end;
     align-items: center;
     font-size: 24px;
-    color: #4d4d4d; /* Tom forte de cinza */
+    color: white; /* Cor branca */
     cursor: pointer;
 }
 
 .search-icon:hover {
-    color: #eca366; /* Cor ao passar o cursor sobre a lupa */
+    color: #e4c5ab; 
 }
 
 /* Main content */
 main {
-    background-color: #fff4d0; /* Fundo creme suave para o conteúdo principal */
+    background-color: #ffffff; 
     padding: 20px 0;
 }
 
@@ -132,7 +132,7 @@ main {
 
 /* Grid Layout */
 #attractions {
-    background-color: #FFFDD0; /* Fundo creme suave para as atrações */
+    background-color: #ffffff; 
     padding: 40px 0;
 }
 
@@ -166,11 +166,12 @@ main {
 }
 
 footer {
-    background-color: white; /* Fundo branco para o footer */
-    color: #4d4d4d; /* Tom forte de cinza */
+    background-color: #050a30; /* Cor da logo */
+    color: white; /* Cor branca para o texto */
     text-align: center;
     padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
