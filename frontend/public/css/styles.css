@@ -156,7 +156,7 @@ main {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 0; /* Remove o espaçamento entre os itens */
+    gap: 10px; /* Ajuste de espaçamento entre os itens */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -172,6 +172,11 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease; /* Adicionando transição de transformação */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 .grid-item h3 {
