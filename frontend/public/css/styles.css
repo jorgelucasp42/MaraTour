@@ -1,0 +1,193 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0ebe6;
+}
+
+header {
+    background-color: #050a30; /* Cor da logo */
+    color: #4d4d4d; /* Tom forte de cinza para o texto */
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100px; /* Altura do header */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%; /* Para garantir que o conteúdo preencha a altura do header */
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    height: 70px; /* Ajustando a altura da logo */
+}
+
+header nav {
+    flex: 2;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; /* Garantir que o ul ocupe toda a altura do header */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Ajustando o espaçamento entre os itens da lista */
+    height: 100%; /* Garantir que o li ocupe toda a altura do header */
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:hover {
+    background-color: #f1eaeae3; /* Alteração de cor ao passar o cursor */
+}
+
+header nav ul li a {
+    color: white; /* Cor branca para o texto */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
+    padding: 10px 15px;
+    height: 100%;
+}
+
+header nav ul li a:hover {
+    color: #eca366;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#search-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-icon {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    color: white; /* Cor branca */
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    color: #e4c5ab; 
+}
+
+/* Main content */
+main {
+    background-color: #ffffff; 
+    padding: 20px 0;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-slide h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Grid Layout */
+#attractions {
+    background-color: #ffffff; 
+    padding: 40px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0; /* Remove o espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item h3 {
+    margin: 0;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: #050a30; /* Cor da logo */
+    color: white; /* Cor branca para o texto */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

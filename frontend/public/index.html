@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaraTour</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/maratour-logo.png" alt="MaraTour Logo"> <!-- Substitua pelo logo do MaraTour -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre o Maranhão</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#mobilidade">Mobilidade</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Buscar destinos ou atrativos">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="carousel-slide active" style="background-image: url('images/rota-dos-lencois.png');">
+                <h2>Rota dos Lençóis</h2>
+            </div>
+            <div class="carousel-slide" style="background-image: url('images/sao-luis.png');">
+                <h2>São Luís: Patrimônio Histórico</h2>
+            </div>
+            <div class="carousel-slide" style="background-image: url('images/chapada-das-mesas.png');">
+                <h2>Chapada das Mesas</h2>
+            </div>
+        </section>
+        <section id="map-section">
+            <div id="map"></div>
+        </section>
+        <section id="attractions">
+            <h2>Destinos e Atrativos</h2>
+            <div class="grid-container" id="destinations-container">
+                <!-- Os destinos serão carregados dinamicamente aqui -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Turismo Maranhão. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
