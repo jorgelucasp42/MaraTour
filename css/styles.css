@@ -3,15 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0ebe6;
 }
 
 header {
-    background-color: #003366;
-    color: white;
+    background-color: #050a30; /* Cor da logo */
+    color: #4d4d4d; /* Tom forte de cinza para o texto */
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100px; /* Aumentando a altura do header */
+    height: 100px; /* Altura do header */
 }
 
 .header-container {
@@ -27,12 +27,11 @@ header {
 }
 
 .logo img {
-    height: 80px; /* Ajustando a altura da logo para ocupar mais espaço */
+    height: 70px; /* Ajustando a altura da logo */
 }
 
 header nav {
     flex: 2;
-    text-align: right; /* Alinha o texto à direita */
 }
 
 header nav ul {
@@ -40,23 +39,33 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    height: 100%; /* Garantir que o ul ocupe toda a altura do header */
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Ajustando o espaçamento entre os itens da lista */
+    height: 100%; /* Garantir que o li ocupe toda a altura do header */
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:hover {
+    background-color: #f1eaeae3; /* Alteração de cor ao passar o cursor */
 }
 
 header nav ul li a {
-    color: white;
+    color: white; /* Cor branca para o texto */
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
+    padding: 10px 15px;
+    height: 100%;
 }
 
 header nav ul li a:hover {
-    color: #ffcc00;
+    color: #eca366;
 }
 
 .search-icon {
@@ -65,8 +74,18 @@ header nav ul li a:hover {
     justify-content: flex-end;
     align-items: center;
     font-size: 24px;
-    color: white;
+    color: white; /* Cor branca */
     cursor: pointer;
+}
+
+.search-icon:hover {
+    color: #e4c5ab; 
+}
+
+/* Main content */
+main {
+    background-color: #ffffff; 
+    padding: 20px 0;
 }
 
 /* Carousel */
@@ -113,7 +132,7 @@ header nav ul li a:hover {
 
 /* Grid Layout */
 #attractions {
-    background-color: white;
+    background-color: #ffffff; 
     padding: 40px 0;
 }
 
@@ -147,11 +166,12 @@ header nav ul li a:hover {
 }
 
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: #050a30; /* Cor da logo */
+    color: white; /* Cor branca para o texto */
     text-align: center;
     padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
