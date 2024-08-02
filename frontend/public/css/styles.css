@@ -8,7 +8,7 @@ body {
 
 header {
     background-color: #050a30; /* Cor da logo */
-    color: #4d4d4d; /* Tom forte de cinza para o texto */
+    color: white;
     padding: 0 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     height: 100px; /* Altura do header */
@@ -32,6 +32,10 @@ header {
 
 header nav {
     flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; /* Garantir que o nav ocupe toda a altura do header */
 }
 
 header nav ul {
@@ -49,28 +53,33 @@ header nav ul li {
     height: 100%; /* Garantir que o li ocupe toda a altura do header */
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease; /* Adicionando transição para o background-color */
 }
 
 header nav ul li:hover {
-    background-color: #f1eaeae3; /* Alteração de cor ao passar o cursor */
+    background-color: #ff6600; /* Alteração de cor ao passar o cursor */
 }
 
 header nav ul li a {
     color: white; /* Cor branca para o texto */
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Adicionando transição para o background-color */
     padding: 10px 15px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* Adicionando transição para o color */
 }
 
 header nav ul li a:hover {
-    color: #eca366;
+    color: white; /* Mantém a cor branca do texto ao passar o mouse */
 }
 
 .search-container {
     display: flex;
     align-items: center;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 #search-bar {
@@ -86,7 +95,6 @@ header nav ul li a:hover {
 }
 
 .search-icon {
-    flex: 0.5;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -173,6 +181,7 @@ main {
     justify-content: flex-end;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease; /* Adicionando transição de transformação */
+    cursor: pointer;
 }
 
 .grid-item:hover {
