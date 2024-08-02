@@ -1,7 +1,10 @@
 const express = require('express');
 const connectDB = require('./config/database');
 const destinoRoutes = require('./routes/destinoRoutes');
-const errorHandler = require('./utils/errorHandler');
+const dotenv = require('dotenv');
+const path = require('path');
+
+dotenv.config();
 
 const app = express();
 
@@ -13,8 +16,8 @@ app.use(express.json());
 // Rotas
 app.use('/api/destinos', destinoRoutes);
 
-// Middleware de tratamento de erros
-app.use(errorHandler);
+// Servir arquivos estáticos do frontend
+app.use(express.static(path.join(__dirname, '../frontend/public')));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
