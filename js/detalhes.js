@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
-    const destino = params.get('destino');
+    const slug = params.get('destino');
 
-    fetch(`/api/destinos/${destino}`)
+    fetch(`/api/destinos/${slug}`)
         .then(response => response.json())
         .then(data => {
             document.getElementById('destino-nome').innerText = data.nome;
