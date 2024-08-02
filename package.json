@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Este é um projeto de site para promover as atrações turísticas do Maranhão.",
   "main": "backend/server.js",
-  "type": "module",
+  
 
   "scripts": {
     "start": "node backend/server.js",
