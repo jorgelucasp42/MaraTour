@@ -4,7 +4,9 @@ const destinoRoutes = require('./routes/destinoRoutes');
 const dotenv = require('dotenv');
 const path = require('path');
 
-dotenv.config();
+dotenv.config();  // Deve ser chamado antes de acessar as variáveis de ambiente
+
+console.log(`MONGO_URI: ${process.env.MONGO_URI}`);  // linha para depuração
 
 const app = express();
 
