@@ -4,9 +4,13 @@ const destinoRoutes = require('./routes/destinoRoutes');
 const dotenv = require('dotenv');
 const path = require('path');
 
-dotenv.config();  // Deve ser chamado antes de acessar as variáveis de ambiente
+console.log('Current directory:', __dirname);  
+console.log('Env file path:', path.resolve(__dirname, '.env'));
 
-console.log(`MONGO_URI: ${process.env.MONGO_URI}`);  // linha para depuração
+// Carregar variáveis de ambiente
+dotenv.config({ path: path.resolve(__dirname, '.env') });
+
+console.log(`MONGO_URI after dotenv config: ${process.env.MONGO_URI}`);
 
 const app = express();
 
@@ -21,7 +25,7 @@ app.use('/api/destinos', destinoRoutes);
 // Servir arquivos estáticos do frontend
 app.use(express.static(path.join(__dirname, '../frontend/public')));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
